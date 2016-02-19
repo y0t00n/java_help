@@ -19,8 +19,8 @@ class randArray{
 		}
 		System.out.println();
 		for (int count=0;count<10;count++){
-			int indFrom = (int) (Math.random() * (N-1));
-			int indTo = (int) (Math.random() * (N-1));
+			int indFrom = (int) (Math.random() * (N));
+			int indTo = (int) (Math.random() * (N));
 			
 			// System.out.println("arr[" + indFrom + "] To arr[" + indTo + "]");
 			// System.out.println("    " + arr[indFrom] + "         " + arr[indTo]);
