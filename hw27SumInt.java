@@ -1,18 +1,25 @@
-// 27. Dany dva celyh chisla A i B (A < B). Najti summu vseh celyh chisel ot 
-// A do B vkljuchitel'no.
-// Sn = ((a1+an)/2) * (((an-a1)/(a2-a1)) + 1)
+// 28. Dany dva celyh chisla A i B (A < B). Najti proizvedenie vsekh celyh 
+// chisel ot A do B vklyuchitel'no.
 
 
 import java.util.Scanner;
 
-class hw27SumInt{
+class hw28MultInt{
 
-	static int getSumABLoop(int a, int b) {
-		int sum = 0;
+	static int getMultABLoop(int a, int b) {
+		int mul = 1;
 		for (int i=a; i<=b; i++){
-			sum+=i;
+			mul*=i;
 		}
-		return(sum);
+		return(mul);
+	}
+
+	static int getMultABRec(int low, int high) {
+		if (high==low) {
+			return(low);
+		} else {
+			return(a*getMultABRec(high-1,low));
+		}
 	}
 
 	static int getSumABSmart(int a, int b) {
