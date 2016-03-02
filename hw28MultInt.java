@@ -4,7 +4,7 @@
 
 import java.util.Scanner;
 
-class hw29SumSqrInt{
+class hw28MultInt{
 
 	static int getMultABLoop(int a, int b) {
 		int mul = 1;

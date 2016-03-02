@@ -4,7 +4,7 @@
 
 import java.util.Scanner;
 
-class hw28MultInt{
+class hw27SumInt{
 
 	static int getMultABLoop(int a, int b) {
 		int mul = 1;
@@ -18,7 +18,7 @@ class hw28MultInt{
 		if (high==low) {
 			return(low);
 		} else {
-			return(a*getMultABRec(high-1,low));
+			return(high*getMultABRec(high-1,low));
 		}
 	}
 
@@ -36,8 +36,8 @@ class hw28MultInt{
 			int B = Integer.parseInt(arg[1]);
 			if (A < B) {
 				System.out.println("From numbers " + A + " and " + B + ", Sum of numbers A,A+1..B equals:");
-				System.out.println("Loop Sum: " + getSumABLoop(A,B));
-				System.out.println("Smart Sum: " + getSumABSmart(A,B));
+				System.out.println("Loop Sum: " + getMultABLoop(A,B));
+				System.out.println("Smart Sum: " + getMultABRec(A,B));
 			} else {
 				System.out.println("ERROR: A <= B");
 			}

@@ -14,6 +14,7 @@ class hw35isSimple{
 			// System.out.println(N + " % " + i + " = " + N%i);
 			if (N%i==0){
 				res = false;
+				break;
 			}
 			// System.out.println(res);
 		}
